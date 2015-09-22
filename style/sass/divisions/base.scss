@@ -1,0 +1,265 @@
+// ------------------------------------------- tags end
+body, 
+ul, ol,
+h1,h2,h3,h4 {
+	margin: 0;
+}
+
+section {
+	margin: 0 auto;
+	width: 90%;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+p {
+	font-size: $textSize;
+}
+
+
+h2{
+	font-family: $thinFont;
+	font-size: $h2Size;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+// ------------------------------------------- tags end
+
+
+// ------------------------------------------- reused
+
+.main-nav {
+	@extend %main-nav-style;
+}
+
+.active {
+	color: $mainColor !important; //Should not be happening CHECK THIS AGAIN
+}
+
+.preview {
+	float: left;
+	margin: 0 0 5% 5%; 
+	width: 25%;
+}
+
+.preview-details {
+	color: $whiteColor;
+	text-shadow:$fontBlur;
+
+	h3 {
+    background-color: #B2333E;
+    font-family: $thinFont;
+    font-size: 1rem;
+    padding: 10px 20px;
+	}
+}
+
+.play-album, {
+	height: 100px;
+	margin: 0 75px;
+	width: 100px;
+	// visibility: hidden;
+
+}
+
+.tag {
+  border: 1px solid #000;
+  padding: 8px 13px
+}
+
+.pay {
+	height:100px;
+	margin: 0 95px;
+	width:50px;
+}
+
+.sells-section {
+	background-color: $clearColor;
+	overflow: hidden;
+	padding: 4% 1% 0;
+}
+
+.sells-nav {
+	border-bottom: $titleHighlight;
+  margin-bottom: 10px;
+	a{	
+		color: $darkColor;
+		font-family: $thinFont;
+		font-size: 2rem;
+		padding: 5px 2%;
+
+		&:hover {
+			color: $interactionColor !important; //Should not be happening CHECK THIS AGAIN
+		}
+	}
+}
+
+.top-item {
+	display: inline-block;
+	float: left;
+	overflow: hidden;
+	width: 65%;
+	
+	img {
+		float: left;
+		height: 400px;
+		width: 400px;
+	}
+}
+
+.item-details {
+	float: left;
+	font-family: $thinFont;
+	width: 45%;
+	margin: 0 2%;
+
+	h2 {
+		padding-bottom: 2%;
+		margin-bottom: 5%; 
+	}
+
+	a {
+		color: $mainColor;
+
+		&:hover{
+			color: $interactionColor;
+		}
+	}
+}
+
+.search-block {
+	float: right;
+	background-color: $mainColor;
+	width: 20%;
+  padding-bottom: 20px;
+	input {
+		background: none;
+		border-radius: none;
+		border: 1px solid $whiteColor; 
+		color: $whiteColor;
+		font-size: $textSize;
+		margin: 2% 2.5%;
+		width: 95%;
+	}
+}
+
+.top-search-section {
+	h3{	
+		@extend %highlight;
+		margin:15% 0 5%;
+	}
+
+	button {
+		
+		float: right;
+	}
+
+	a {
+		display: block;
+		color: $darkColor;
+		font-family: $basicFont;
+
+		&:hover{
+			color: $interactionColor;
+		}
+	}
+}
+
+.artist-wrapper {
+	background: url(../../images/album.jpg)no-repeat center center;
+	background-size: cover;
+	padding-top: 5%; 
+
+	section {
+		background-color: rgba(0,0,0,0.8);
+		overflow: hidden;
+		margin-bottom: 2%;
+		padding-bottom: 2%;
+
+		h2 {
+			border-bottom: 1px solid $whiteColor;
+			color: $whiteColor;
+			float: left;
+			margin: 1% 2%;
+			padding-bottom: 5px;
+			width: 100%;
+
+			a {
+				color: $whiteColor;
+				font-family: $thinFont;
+				font-size: 2rem;
+
+				&:hover {
+					color: $interactionColor;
+				}
+			}
+		}
+	}
+}
+
+.item {
+	float: left;
+	height: 500px;
+	margin-left: 10px;
+	width: 500px;
+}
+
+.band-icon {
+	height: 60px;
+	margin: -1.5% 2%;
+	width: 60px;
+}
+
+
+
+
+.more-to-see {
+	background-color: $clearColor;
+	margin-bottom: 2%;
+	overflow: hidden;
+
+	h2 {
+		border-bottom: $titleHighlight;
+		color: $mainColor;
+		font-family: $thinFont;
+		margin: 1% 0 2.5% 2.5%;
+		width: 95%;
+	}
+}	
+
+// ------------------------------------------- reused's end
+
+
+// ------------------------------------------- buttons 
+
+.buy-btn {
+	margin: 10% 0 5%;
+	display: block;
+}
+
+.social {
+	display: block;
+	overflow: hidden;
+
+	img {
+		float: left;
+		height: 30px;
+		margin: -5px 5px 0 0;
+		width: 30px;
+	}
+
+}
+
+section .tag, .up-btn, .down-btn {
+}
+// ------------------------------------------- buttons end
+
+
+

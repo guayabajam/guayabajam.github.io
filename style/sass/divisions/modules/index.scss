@@ -1,0 +1,83 @@
+// -------------------------------------------------------------------- Header
+
+h1 {
+	padding-top: 20%;
+	font-size: 4rem;
+	text-align: center;
+	text-shadow: $fontBlur;
+}
+
+.index-header {
+	background: url(../../images/index-BG.png) no-repeat center center;
+	background-size: cover;
+	font-family: $thinFont;
+	color: $whiteColor;
+	padding-bottom: 20%;
+
+	p{	
+		font-size: 1.8rem;
+		text-align: center;
+		text-shadow: $fontBlur;
+	}
+}
+
+.down {
+	text-align: center;
+	display: block;
+}
+
+// -------------------------------------------------------------------- Header's end
+
+
+// -------------------------------------------------------------------- Intro
+.intro-section {
+	padding: 5% 0;
+	overflow: hidden;
+	font-family: $thinFont;
+	margin-top: -170px;
+
+	.preview {
+		background: url(../../images/monte-band.jpg) no-repeat center center;
+		background-size: cover;
+		color: $whiteColor;
+		width: 25%;
+    float: right;
+	}
+}
+
+
+.intro {
+	background-color: $mainColor;
+	color: $whiteColor;
+	float: left;
+  margin-bottom: 6%;
+	padding: 4% 2.5%;
+	width: 60%;
+
+	button {
+		float: right;
+    font-size: 20px;
+    margin-top: 59px;
+	}
+}
+
+// -------------------------------------------------------------------- Intro's end
+
+
+//-------------------------------------------------------------------- Buy - shelf
+
+.top-brief {
+	background-color: $darkColor;
+	text-align: center;
+	margin-bottom: 4%;
+	padding: 3% 0;
+	width: 100%;
+
+	h2 {
+		color: $whiteColor;
+		font-family: $thinFont;
+	}
+}
+
+
+//-------------------------------------------------------------------- Buy - shelf's end

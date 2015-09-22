@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guayaba Jam</title>
+	<!-- x -->
+	<link rel="stylesheet" type="text/css" href="style/css/style.css">
+	<link rel="stylesheet" type="text/css" href="style/popUp.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,500' rel='stylesheet' type='text/css'>
+	<meta charset="UTF-8">
+</head>
+
+<body>
+
+	<!-- Star header -->
+	<header id="INICIO" class="index-header" >
+		<nav class="main-nav" >
+			<a href="#openModal">Mi perfil</a>
+			<div id="openModal" class="modalDialog">
+				<div>
+					<a href="#close" title="Close" class="close">X</a>
+					<form action="php/user_class.php" method="post">
+        		<fieldset>
+        		<legend>Ingrese</legend>
+        			<label for="usuario">Usuario:</label>
+              <input type="text" name="usuario" value="" required><br>
+              <label for="contrasena">Contraseña:</label>
+              <input type="text" name="contrasena" value="" required><br>
+              <input class="submit" name="submit" type="submit" value="Ingresar">
+            </fieldset>
+          </form>
+				</div>
+			</div>
+			<a href="pages/merch.html">Comprá</a>
+			<a href="#INICIO" >Inicio</a>
+		</nav>
+		<h1>Guayaba Jam</h1>
+		<p>El lugar para comparir, encontrar y vivir la música Costarricense</p>
+		<span class="down" >down</span>
+	</header>
+	<!-- End header -->
+	<!-- Star intro-section -->
+	<section class="intro-section">
+		<div class="intro">
+			<h2>Conocé nuevas bandas y exponé la tuya</h2>
+			<p>
+				Guayaba Jam es una página destinada a promover la música nacional.
+				Acá podés encontrar los mejors artistas, los más nuevos, y lo más populares del momento y comprar su material o mercancia.
+				Pero no acaba ahí, también tener a la mano una plataforma para mostrar tu banda y ponerla en el mapa.
+				Todo está en tus manos. Explorá y divertíte!
+			</p>
+			<button class="btn-basic">Creá un perfil y empéza ya</button>
+		</div>
+		<!-- Star preview banda -->
+    <section id="primary-preview">
+
+    </section>
+		<!-- End preview banda -->
+	</section>
+	<!--  End intro-section -->
+	<div class="top-brief"> <h2>Divertíte Comprando</h2> </div>
+	<!-- Star sells-section -->
+	<section class="tops sells-section">
+		<nav class="sells-nav">
+			<a href="#"  class="active">Recomendados</a>
+		</nav>
+			<div class="top-item">
+				<img src="images/elOtroMundo.jpg">
+				<div class="item-details">
+					<h2> <a href="#">El otro mundo</a></h2>
+					<h4><a href="#">Monte</a></h4>
+					<p>
+						El más reciente album de Monte, lleno de contrastes entre gran emocion y pacifica lentitud.
+						La poesia en las letras derrocha emociones hermosas y sus melodias acompañan a perfección para tomarte a un viaje unico.
+					</p>
+					<button class="tag">2015</button>
+					<button class="tag">Indie Rock</button>
+					<button class="tag">Noise</button>					
+				</div>
+			</div>
+    <div class="search-block">
+        <input type="search" placeholder="Buscá más música">
+        <section class="top-search-section">
+          <h3>Etiquetas populares</h3>
+          <a href="#">Punk</a>
+          <a href="#">Indie</a>
+          <a href="#">Black Metal</a>
+          <button class="btn-basic">Más</button>
+        </section>
+        <section class="top-search-section">
+          <h3>Bandas más buscadas</h3>
+          <a href="#">Son de tikizia</a>
+          <a href="#">Billy the kid</a>
+          <a href="#">Gandhi</a>
+          <button class="btn-basic">Más</button>          
+        </section>
+    </div>
+    <section id="secundary-preview" class="secundary-preview">
+    </section>
+		<!-- shielf -->
+	</section>
+	<!-- End sells-section -->
+	<!-- Script Section -->
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript">
+	    loadJSON('php/tables.php');
+	    app.indexInfo();
+	</script>
+</body>
+</html>
+

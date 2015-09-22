@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,MAAO;EACN,OAAO,EAAE,QAAQ;EAEjB,QAAE;IACD,KAAK,EAAE,GAAG;;AAIZ,MAAO;EACN,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,KAAK",
+"sources": ["../../../sass/divisions/modules/album.scss"],
+"names": [],
+"file": "album.css"
+}

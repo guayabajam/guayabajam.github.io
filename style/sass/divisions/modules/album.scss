@@ -1,0 +1,88 @@
+
+.album {
+	padding: 1% 0 4%;
+	overflow: hidden;
+}
+
+.details {
+	margin:0 2%;
+	float: left;
+
+	p {
+		color: $whiteColor;
+		font-family: $basicFont;
+		
+	}
+}
+
+.up-btn, .down-btn {
+	background-color: rgba(0,0,0,0.3);
+	font-size: 1.4rem;
+	overflow: hidden;
+	padding: 1%;
+
+	span {
+		float: left;
+		padding-right:20px; 
+	}
+
+}
+
+.vote {
+	float: left;
+	height: 35px;
+	width: 35px;
+}
+
+.playlist {
+	float: left;
+
+	ol li{
+		color: $whiteColor;
+		font-family: $thinFont;
+		font-size: $textSize;
+		margin: 2% 0;
+
+		&:hover {
+				color: $mainColor;
+		}
+
+		a {
+			color: $whiteColor;
+			&:hover {
+				color: $mainColor;
+			}
+		}
+	}
+}
+
+.music-controler {
+	background-color: rgba(178,51,62,0.8);
+	float: left;
+	margin: 2% 0;
+	overflow: hidden;
+	padding: 1% 2% 1% 10%;
+	width: 100%;
+
+	button {
+		background: none;
+		border:none; 
+		float: left;
+		margin: 0 2%;
+
+		img {
+			height: 30px;
+			width: 30px;
+		}
+	}
+
+	span {
+		border-left: 5px solid $whiteColor;
+		color: $whiteColor;
+		float: left;
+		font-family: $thinFont;
+		font-size: 1.5rem;
+		margin-left: 20%;
+		padding: 1.5% 0 0 5%; 
+	}
+}

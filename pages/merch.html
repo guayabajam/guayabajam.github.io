@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guayaba Jam</title>
+	<!-- x -->
+	<link rel="stylesheet" type="text/css" href="../style/css/style.css">
+	<link rel="stylesheet" type="text/css" href="../style/popUp.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,500' rel='stylesheet' type='text/css'>
+	<meta charset="UTF-8">
+</head>
+
+<body>
+	<nav class="main-nav" >
+		<a href="#">Mi perfil</a>
+		<a href="#">Comprá</a>
+		<a href="../index.html">Inicio</a>
+	</nav>
+
+	<div class="main-shelf">
+		<section class="sells-section">
+			<nav class="sells-nav">
+				<a href="#">Más Vendidos</a>
+				<a href="#">Lo más reciente</a>
+			</nav>
+
+			<section id="merch-details" class="merch-details">
+			</section>
+      <div class="search-block">
+        <input type="search" placeholder="Buscá más música">
+        
+        <section class="top-search-section">
+          <h3>Etiquetas populares</h3>
+          <a href="#">Punk</a>
+          <a href="#">Indie</a>
+          <a href="#">Black Metal</a>
+          <button>Más</button>
+        </section>
+        
+        <section class="top-search-section">
+          <h3>Bandas más buscadas</h3>
+          <a href="#">Son de tikizia</a>
+          <a href="#">Billy the kid</a>
+          <a href="#">Gandhi</a>
+          <button>Más</button>          
+        </section>
+      </div>
+			<div id="overviewMerch" class="overview-merch">
+			</div> <!-- overview merch -->
+
+		</section> <!-- main-shelf -->
+	</div>
+	<!-- Script Section -->
+	<script type="text/javascript" src="../js/main.js"></script>
+	<script type="text/javascript">
+	    loadJSON('../php/get_sell.php');
+	    app.compraInfo();
+	</script>
+</body>
+
+
+</html>
+
+
+
+
+
+
+

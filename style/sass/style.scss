@@ -1,0 +1,12 @@
+// Base
+@import "divisions/variables";
+@import "divisions/placeholders";
+@import "divisions/base";
+
+// Módulos
+ @import "divisions/modules/index";
+ @import "divisions/modules/album";
+ @import "divisions/modules/band";
+ @import "divisions/modules/merch";
+@import "divisions/modules/user";
+// @import "divisions/modules/footer";

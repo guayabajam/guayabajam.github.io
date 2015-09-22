@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAK;EACJ,MAAM,EAAE,CAAC;;AAIV,OAAQ;EACP,MAAM,EAAE,IAAI;;AAGb,MAAO;EACN,MAAM,EAAE,CAAC",
+"sources": ["../../sass/divisions/base.scss"],
+"names": [],
+"file": "base.css"
+}

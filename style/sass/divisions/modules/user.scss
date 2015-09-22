@@ -1,0 +1,112 @@
+.body-style {
+    background: url(../../images/user-bg.jpg) no-repeat center center;
+    background-size: cover;
+    font-family: $basicFont;
+    margin: 0;
+    padding: 0;
+    height: 845px;
+}
+
+.edit {
+    background: none;
+    border: 1px solid $whiteColor;
+    color: $whiteColor;
+    display: block;
+    margin-top: 60px;
+    padding: 4px;
+}
+
+.profile-container {
+    color: $whiteColor;
+    float: left;
+    margin-top: 100px;
+    width: 35%;
+}
+
+.profile-details {
+    background: rgba(0,0,0,.5);
+    height: 575px;
+    margin-left: 50px;
+}
+
+.user-pic {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    padding: 30px 0;
+    height: 300px;
+    width: 300px;
+}
+
+.profile-info {
+    margin-left: 80px;
+    text-transform: uppercase;
+}
+ 
+.main {
+    background: rgba(0,0,0,.6);
+    float: right;
+    height: 550px;
+    padding-top: 25px;
+    margin-top: 100px;
+    margin-right: 50px;
+    margin-bottom: 120px;
+    text-align: center;
+    width: 60%;
+}
+
+.content {
+    color: $whiteColor;
+    padding: 0 50px;
+    padding-bottom: 30px;
+}
+
+.content > div {
+    display: none;
+}
+ 
+.main input {
+    display: none;
+}
+
+.main label {
+    color: $whiteColor;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    width: 30%;
+}
+
+.line-div {
+    border-right: 2px solid $whiteColor;
+    border-left: 2px solid $whiteColor;
+}
+
+.main input:checked + .main label {
+    color: $mainColor;
+}
+ 
+#tab1:checked ~ .content #content1,
+#tab2:checked ~ .content #content2,
+#tab3:checked ~ .content #content3 {
+    display: block;
+}
+
+.aboutme {
+    text-align: left;
+}
+
+.play-album {
+    width: 100px;
+    margin: 0;
+}
+
+.social {
+    margin: 30px 0;
+}
+
+.user-info {
+  padding: 10px;
+  margin: 20px 0;
+  line-height: 1.5;
+}

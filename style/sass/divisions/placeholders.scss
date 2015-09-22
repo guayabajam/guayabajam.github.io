@@ -1,0 +1,29 @@
+%main-nav-style {
+	background-color: $mainColor;
+	box-shadow: $fontBlur;
+	overflow: hidden;
+	position: fixed;
+	margin: 0;
+	width: 100%;
+	
+	a {
+		color: $whiteColor;
+		float: right;
+		font-family: $thinFont;
+		text-decoration: none;
+		margin: 0.5% 2%;
+
+		&:hover{
+			color: $interactionColor;
+		}
+	}
+}
+
+
+%highlight {
+	border-bottom: $alternativeHighlight;
+	color: $whiteColor;
+	font-family: $thinFont;
+	font-size: 1.5rem;
+	padding-bottom: 5px;
+}
