@@ -1,20 +1,23 @@
-function loadJSON(url) { 
+"use strict";
+
+function loadJSON() { 
     var request = new XMLHttpRequest();
-    request.open('GET', url, true);
+    request.open('GET', 'php/tables.php', true);
     request.onload = function() {
       if (request.status >= 200 && request.status < 400) {
-        json = JSON.parse(request.responseText);
+        var json = JSON.parse(request.responseText);
+        console.log(json)
         app.init(json);
-      } else {
-         console.log("We reached our target server, but it returned an error")
-      }
+      } else{
+        console.log("We reached our target server, but it returned an error")
+      };
     };
     request.onerror = function() {
        console.log("There was a connection error of some sort")
     };
     request.send();
 }
-
+loadJSON();
 
 var app = ( function( window, undefined ) {
   

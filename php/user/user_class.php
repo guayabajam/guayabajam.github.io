@@ -8,9 +8,9 @@ ini_set('display_errors', 1);
 $_SESSION['usuario'] = $_POST['usuario'];
 $_SESSION['contrasena'] = $_POST['contrasena'];
 
-require('template.php');
+require('../template.php');
 
-$thanksPage = new Template("'../php/get_user.php'");
+$thanksPage = new Template("'get_user.php'");
 $thanksPage->printPage();
 
 
