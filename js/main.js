@@ -7,7 +7,7 @@ function loadJSON() {
       if (request.status >= 200 && request.status < 400) {
         var json = JSON.parse(request.responseText);
         console.log(json)
-        app.init(json);
+        //app.init(json);
       } else{
         console.log("We reached our target server, but it returned an error")
       };
