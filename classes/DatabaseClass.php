@@ -6,8 +6,8 @@
 class Database{	
 	// private variables
 	private $username = 	'sql590801';
-	private $password = 	'nN1*rI5%';
-	private $host = 		'sql5.freesqldatabase.com';
+	private $password = 	'nN1*rI%';
+	private $host = 	'sql5.freesqldatabase.com';
 	private $database = 	'sql590801';
 	private $charset = array(
 		'charset' => 'utf8'
@@ -28,6 +28,7 @@ class Database{
 			echo '<hr>Connection Failed: '.$erorr->getMessage().'<hr>';
 			die();
 		}
+		echo '<hr>Connection<hr>';
 	}
 
 	function __destruct(){
