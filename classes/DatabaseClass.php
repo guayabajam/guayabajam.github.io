@@ -6,7 +6,7 @@
 class Database{	
 	// private variables
 	private $username = 	'sql590801';
-	private $password = 	'nN1*rI5%';
+	private $password = 	'nN1*rI%';
 	private $host = 	'sql5.freesqldatabase.com';
 	private $database = 	'sql590801';
 	private $charset = array(
