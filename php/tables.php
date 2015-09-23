@@ -8,7 +8,7 @@ ini_set('display_errors', 1);
  * @description prints all the inventary items inside a table
  */
 
-require('../classes/ItemsClass.php');
+require('classes/ItemsClass.php');
 
 // instace of the items
 $items = new Items();
