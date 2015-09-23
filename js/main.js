@@ -3,7 +3,7 @@ function loadJSON(url) {
     request.open('GET', url, true);
     request.onload = function() {
       if (request.status >= 200 && request.status < 400) {
-        //console.log(request.responseText)
+        console.log(request.responseText)
         json = JSON.parse(request.responseText);
         app.init(json);
       } else {
