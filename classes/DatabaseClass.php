@@ -6,8 +6,8 @@
 class Database{	
 	// private variables
 	private $username = 	'sql590801';
-	private $password = 	'nN1*rI%';
-	private $host = 	'sql5.freesqldatabase.com';
+	private $password = 	'nN1*rI5%';
+	private $host = 		'sql5.freesqldatabase.com';
 	private $database = 	'sql590801';
 	private $charset = array(
 		'charset' => 'utf8'
@@ -23,13 +23,11 @@ class Database{
 			$this->connection = new PDO("mysql:host=".$this->host.";dbname=".$this->database, $this->username, $this->password);
 
 			$this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-			echo 'Connected to Database<br/>';
 			$this->connection->query("SET CHARACTER SET utf8");
 		}catch(PDOException $erorr){
 			echo '<hr>Connection Failed: '.$erorr->getMessage().'<hr>';
 			die();
 		}
-		echo '<hr>Connection<hr>';
 	}
 
 	function __destruct(){
