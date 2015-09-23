@@ -4,7 +4,7 @@ function loadJSON() {
   $.ajax({
     url: 'php/tables.php',
     type: 'GET',
-    data: 'json',
+    data: 'text',
     success: function(data) {
     //called when successful
       var json = JSON.parse(data);
