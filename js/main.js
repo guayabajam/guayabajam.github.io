@@ -1,21 +1,20 @@
 "use strict";
 
-function loadJSON() { 
-    var request = new XMLHttpRequest();
-    request.open('GET', 'php/tables.php', true);
-    request.onload = function() {
-      if (request.status >= 200 && request.status < 400) {
-        var json = JSON.parse(request.responseText);
-        console.log(json)
-        //app.init(json);
-      } else{
-        console.log("We reached our target server, but it returned an error")
-      };
-    };
-    request.onerror = function() {
-       console.log("There was a connection error of some sort")
-    };
-    request.send();
+function loadJSON() {
+  $.ajax({
+    url: 'php/tables.php',
+    type: 'GET',
+    data: 'json',
+    success: function(data) {
+    //called when successful
+      var json = JSON.parse(data);
+      console.log(json)
+    },
+    error: function(e) {
+    //called when there is an error
+      console.log(e.message);
+    }
+  });
 }
 loadJSON();
 
